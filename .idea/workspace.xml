@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33c9adce-1f4d-47dc-a8af-043ad5d7d857" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/br/com/dbc/proof/service/EventManagementService.java" afterPath="$PROJECT_DIR$/src/br/com/dbc/proof/service/EventManagementService.java" />
-    </list>
+    <list default="true" id="33c9adce-1f4d-47dc-a8af-043ad5d7d857" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
