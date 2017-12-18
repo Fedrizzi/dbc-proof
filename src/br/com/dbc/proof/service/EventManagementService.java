@@ -18,6 +18,8 @@ public class EventManagementService {
 
     /*
     Process sessions read in file and made mornings and afternoon sessions with start times.
+    Algorithm Strategy: Sort sessions with decresing durantion time, made morning e afternoon limitations and
+    calcule startTime os sessions, finally call outputfile write to output tack file.
      */
     public void processSessions(List<Session> sessions){
         sessions.sort(Comparator.comparingInt(Session::getSessionDuration).reversed());
