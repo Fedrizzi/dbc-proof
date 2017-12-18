@@ -21,14 +21,15 @@ public class EventManagementServiceTest {
     @Test
     public void processSessions() {
         EventManagementService eventManagementService = new EventManagementService(fileProcessService);
-        List<Session> sessionList = new ArrayList<Session>();
-        loadSessions(sessionList);
+        List<Session> sessionList = loadSessions();
         eventManagementService.processSessions(sessionList);
 
         Assert.assertTrue(sessionList.size() == 0);
     }
 
-    private void loadSessions(List sessions){
+    private List<Session> loadSessions(){
+        List<Session> sessions = new ArrayList<Session>();
+
         sessions.add(new Session("A",60));
         sessions.add(new Session("B",45));
         sessions.add(new Session("C",30));
@@ -48,6 +49,8 @@ public class EventManagementServiceTest {
         sessions.add(new Session("R",60));
         sessions.add(new Session("S",30));
         sessions.add(new Session("T",30));
+
+        return sessions;
     }
 
 }

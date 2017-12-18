@@ -16,6 +16,9 @@ public class EventManagementService {
         this.fileProcessService = fileProcessService;
     }
 
+    /*
+    Process sessions read in file and made mornings and afternoon sessions with start times.
+     */
     public void processSessions(List<Session> sessions){
         sessions.sort(Comparator.comparingInt(Session::getSessionDuration).reversed());
         List<Session> morningTrackOne = madeMorningEvents(sessions);

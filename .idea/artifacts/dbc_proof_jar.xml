@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="dbc-proof:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/dbc_proof_jar</output-path>
+    <root id="archive" name="dbc-proof.jar">
+      <element id="module-output" name="dbc-proof" />
+    </root>
+  </artifact>
+</component>
